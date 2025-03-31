@@ -111,7 +111,7 @@ values into the text boxes.
 You can place multiple images in the same window using `imshow_gui`:
 ```
 using ImageView, TestImages, Gtk4
-gui = imshow_gui((300, 300), (2, 1))  # 2 columns, 1 row of images (each initially 300×300)
+gui = imshow_gui((300, 300), (1, 2))  # 1 row, 2 columns of images (each initially 300×300)
 canvases = gui["canvas"]
 imshow(canvases[1,1], testimage("lighthouse"))
 imshow(canvases[1,2], testimage("mandrill"))
